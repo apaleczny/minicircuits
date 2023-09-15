@@ -3,8 +3,9 @@ Python Interface for MiniCircuits Attenuators
 
 Example Usage
 
-from DeviceManager import DeviceManager
 
+from DeviceManager import DeviceManager
+```
 device_manager = DeviceManager()
 attenuators = device_manager.discover_devices(5)
 print(attenuators)
@@ -14,3 +15,4 @@ for attenuator in attenuators:
 
 my_attenuator.set_attenuation(40)
 print(my_attenuator.get_attenuation())
+```
